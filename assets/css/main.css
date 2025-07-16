@@ -1,0 +1,16 @@
+/*
+* CUSTOM PROPERTIES
+*/
+
+:root {
+  --ff-poppins: 'Poppins', sans-serif;
+  /* TODO: Implement custom properties, such as background colors and gradients */
+}
+
+/*
+* MAIN
+*/
+
+html {
+  font-family: var(--ff-poppins);
+}

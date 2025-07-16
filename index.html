@@ -5,63 +5,101 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Michaels Personal Portfolio</title>
-
-	<!-- favicon -->
+  <!-- TODO: Create a custom favicon and update this path -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Michael Barrientos | Developer Portfolio</title>
 
 	<!-- stylesheet -->
 	<link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-	<!-- 
-		MAIN
-	-->
+	<!-- MAIN -->
 	<main>
 
-		<!-- 
-			SIDEBAR 
-		-->
-		<aside class="sidebar"></aside>
+    <!--
+      - #HEADER
+    -->
+    <header>
 
-		<!--
-			MAIN-CONTENT
-		-->
-		<div class="main-content">
+      <div class="left-section">
 
-			<!-- 
-				NAVBAR 
-			-->
-			<nav class="navbar"></nav>
+        <figure class="avatar-box">
+          <!-- TODO: Create a custom icon and update these paths -->
+          <img src="assets/img/" alt="User icon">
+        </figure>
 
-			<!-- 
-				PORTFOLIO 
-			-->
-			<div class="portfolio"></div>
+      </div>
 
-			<!-- 
-				RESUME 
-			-->
-			<div class="resume"></div>
+      <div class="right-section">
 
-			<!-- 
-				ABOUT 
-			-->
-			<article class="about-me"></article>
+        <!-- TODO: Find a sun and moon icon and update this path -->
+        <button class="theme-toggle-button">
+          <img src="assets/img/" alt="Moon icon">
+        </button>
 
-			<!-- 
-				CONTACT 
-			-->
-			<div class="contact"></div>
+        <button class="theme-toggle-button">
+          <img src="assets/img/" alt="Sun icon">
+        </button>
 
-			<!-- 
-				BLOG 
-			-->
-			<article class="blog"></article>
+      </div>
 
-		</div>
+    </header>
+
+    <!--
+      - #MAIN-CONTENT
+    -->
+    <div class="main-content">
+      <!-- 
+        TODO: Implement N number of projects to this section.
+        Research JSON integration and use JS to make this process easier.
+      -->
+      <ul class="portfolio-grid">
+        <li class="portfolio-project">
+          <button class="test-project"></button>
+        </li>
+      </ul>
+    </div>
+
+
+    <!--
+      - #NAVBAR
+    -->
+    <nav class="navbar">
+      <!-- TODO: Implement buttons in the navbar to take the user to differnt parts of the portfolio.  -->
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <button class="contact-me"></button>
+        </li>
+        <li class="navbar-item">
+          <button class="about-me"></button>
+        </li>
+        <li class="navbar-item">
+          <!-- TODO: Implement resume to the site using a JSON file so it can be easy to update -->
+          <button class="resume"></button>
+        </li>
+        <li class="navbar-item">
+          <!-- TODO: Create a blog section which takes Markdown files and displays them. -->
+          <button class="blog"></button>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- 
+      - #FOOTER
+    -->
+    <footer class="footer"></footer>
 
 	</main>
 

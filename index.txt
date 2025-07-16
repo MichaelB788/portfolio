@@ -1,0 +1,25 @@
+# START SCREEN
+  # SIDEBAR
+    - Projects preview
+
+  # MAIN SECTION
+    - Button to open the main menu
+
+# MAIN MENU
+  # HEADER
+  - Left section
+    - Icons
+  - Right section
+    - Information
+      - Time
+      - Light/Dark mode toggle button
+
+  # MAIN-CONTENT
+  - Portfolio grid
+    - N amount of projects
+
+  # NAVBAR
+  - Contact
+  - About
+  - Resume
+  - Blog
