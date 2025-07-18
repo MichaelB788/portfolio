@@ -5,10 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TODO: Create a custom favicon and update this path -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/m_icon.png" type="image/x-icon">
 
-  <title>Michael Barrientos | Developer Portfolio</title>
+  <title>MB | Dev Portfolio</title>
 
   <!-- stylesheet -->
   <link rel="stylesheet" href="assets/css/main.css">
@@ -19,59 +18,84 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
+
+
+
 <body>
 
   <!-- MAIN -->
   <main>
 
-    <!--
-      - #HEADER
-    -->
+    <!-- # HEADER -->
     <header>
 
-      <div class="left-section">
+      <!-- Left section -->
+      <div class="header__left">
 
-        <figure class="avatar-box">
-          <!-- TODO: Create a custom icon and update these paths -->
-          <img src="assets/img/" alt="User icon">
-        </figure>
+        <div class="header__avatar" role="img">
+          <img src="assets/img/m_icon.png" alt="User icon">
+        </div>
 
       </div>
 
-      <div class="right-section">
-
-        <!-- TODO: Find a sun and moon icon and update this path -->
-        <button class="theme-toggle-button">
-          <img src="assets/img/" alt="Moon icon">
+      <!-- Right section -->
+      <div class="header__right">
+      
+        <!-- TODO: Create a real world timer and replace this placeholder -->
+        <time datetime="" class="header__clock" aria-label="Current time">
+          <p><span class="number">12:00</span>AM</p>
+        </time>
+      
+        <!-- TODO: Track the wifi stability of the user and display it's output in an icon -->
+        <div class="header__wifi" role="img" aria-label="Wifi signal">
+          <img src="assets/img/" alt="Wifi strength"></img>
+        </div>
+      
+        <!-- TODO: Track the battery percentage of the user and display it's output in an icon -->
+        <p class="header__battery" aria-label="Battery percentage"> <span class="number">70</span>% </p>
+      
+        <!-- TODO: Hide the sun or moon icon when light or dark mode is in effect -->
+        <button class="header__theme-toggle" aria-label="Toggle light mode">
+          <img src="assets/img/sun.svg" alt="Sun icon">
         </button>
-
-        <button class="theme-toggle-button">
-          <img src="assets/img/" alt="Sun icon">
+      
+        <button class="header__theme-toggle" aria-label="Toggle dark mode">
+          <img src="assets/img/moon.svg" alt="Sun icon">
         </button>
-
       </div>
 
     </header>
 
-    <!--
-      - #MAIN-CONTENT
-    -->
+
+
+
+    <!-- # MAIN-CONTENT -->
     <div class="main-content">
+
       <!-- 
         TODO: Implement N number of projects to this section.
         Research JSON integration and use JS to make this process easier.
       -->
-      <ul class="portfolio-grid">
-        <li class="portfolio-project">
-          <button class="test-project"></button>
+      <ul class="project-list">
+
+        <li class="project-card">
+          <img src="assets/img/" alt="Project preview">
+          <button class="test-project" aria-label="Link to view the project"></button>
         </li>
+
+        <li class="project-card">
+          <img src="assets/img/" alt="Project preview">
+          <button class="test-project" aria-label="Link to view the project"></button>
+        </li>
+
       </ul>
+
     </div>
 
 
-    <!--
-      - #NAVBAR
-    -->
+
+
+    <!-- #NAVBAR -->
     <nav class="navbar">
       <!-- TODO: Implement buttons in the navbar to take the user to differnt parts of the portfolio.  -->
       <ul class="navbar-list">
@@ -94,9 +118,10 @@
       </ul>
     </nav>
 
-    <!-- 
-      - #FOOTER
-    -->
+
+
+
+    <!-- #FOOTER -->
     <footer class="footer"></footer>
 
   </main>

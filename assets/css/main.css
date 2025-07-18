@@ -1,16 +1,48 @@
-/*
-* CUSTOM PROPERTIES
-*/
+/* || CUSTOM PROPERTIES */
 
 :root {
   --ff-poppins: 'Poppins', sans-serif;
-  /* TODO: Implement custom properties, such as background colors and gradients */
 }
-
-/*
-* MAIN
-*/
 
 html {
   font-family: var(--ff-poppins);
+}
+
+p > span {
+  font-size: x-large;
+}
+
+/* || MAIN */
+
+
+/* || HEADER */
+
+/* TODO: Fix bug of header avatar not fitting in with the max-height*/
+header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 5em;
+}
+
+header img {
+  max-height: 5em;
+  max-width: 5em;
+}
+
+.header__right {
+  max-height: fit-content;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header__avatar {
+  align-items: center;
+}
+
+
+/* || MAIN-CONTENT */
+
+.project-list {
+  display: grid;
 }
