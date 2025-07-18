@@ -8,11 +8,12 @@
 # MAIN MENU
   # HEADER
   - Left section
-    - Icons
+    - User icon
   - Right section
-    - Information
-      - Time
-      - Light/Dark mode toggle button
+    - Time
+    - Wifi status
+    - Battery percentage
+    - Light/Dark mode toggle button
 
   # MAIN-CONTENT
   - Portfolio grid
