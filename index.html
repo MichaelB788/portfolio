@@ -34,6 +34,7 @@
 
         <div class="header__avatar" role="img">
           <img src="assets/img/m_icon.png" alt="User icon">
+          <a href=""></a>
         </div>
 
       </div>
@@ -48,12 +49,15 @@
       
         <!-- TODO: Track the wifi stability of the user and display it's output in an icon -->
         <div class="header__wifi" role="img" aria-label="Wifi signal">
-          <img src="assets/img/" alt="Wifi strength"></img>
+          <img src="assets/img/wifi.svg" alt="Wifi strength">
         </div>
       
         <!-- TODO: Track the battery percentage of the user and display it's output in an icon -->
-        <p class="header__battery" aria-label="Battery percentage"> <span class="number">70</span>% </p>
-      
+        <div class="header__battery">
+          <p class="header__battery" aria-label="Battery percentage"> <span class="number">70</span>% </p>
+        </div>
+        <img src="assets/img/battery.svg" alt="Battery icon">
+
         <!-- TODO: Hide the sun or moon icon when light or dark mode is in effect -->
         <button class="header__theme-toggle" aria-label="Toggle light mode">
           <img src="assets/img/sun.svg" alt="Sun icon">
@@ -123,6 +127,12 @@
 
     <!-- #FOOTER -->
     <footer class="footer"></footer>
+
+
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+
 
   </main>
 
