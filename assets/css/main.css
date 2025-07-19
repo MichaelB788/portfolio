@@ -4,16 +4,32 @@
   --ff-poppins: 'Poppins', sans-serif;
 }
 
+/* TODO: Let dark mode be the default and toggle using JS */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/*
+FIX: SVG's are not normally inverted with the Dark Reader extension.
+This could fix it, but would cause problems when the plugin is disabled. 
+.header__right {
+  filter: invert(1);
+}
+*/
+
 html {
   font-family: var(--ff-poppins);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
 }
 
 p > span {
   font-size: x-large;
 }
-
-/* || MAIN */
-
 
 /* || HEADER */
 
@@ -29,20 +45,22 @@ header img {
   max-width: 5em;
 }
 
-.header__right {
-  max-height: fit-content;
+.header__right, .header__left {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
+
 .header__avatar {
+  max-height: inherit;
   align-items: center;
 }
-
 
 /* || MAIN-CONTENT */
 
 .project-list {
   display: grid;
 }
+
+/* || MEDIA QUERIES */
