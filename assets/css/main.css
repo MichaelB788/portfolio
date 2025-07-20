@@ -10,7 +10,7 @@
   /* heights and widths */
   --h-header: 5em;
   --wh-avatar: 3em;
-  --h-main-content: 10em;
+  --wh-compact-card: 15em;
 
   /* solid colors */
   --black: hsl(0, 0%, 0%);
@@ -24,11 +24,13 @@
   /* padding */
   --p-small: 0.5em;
   --p-medium: 1em;
+  --p-large: 5em;
 
 }
 
 html {
   font-family: var(--ff-poppins);
+  overflow: hidden;
 }
 
 /* TODO: Let dark mode be the default and toggle using JS */
@@ -53,7 +55,7 @@ p > span {
 /* || MAIN */
 
 main {
-  padding: 10px;
+  padding: 2em;
 }
 
 /* || HEADER */
@@ -72,10 +74,6 @@ header {
   align-items: center;
 }
 
-.header__right img {
-  filter: invert(var(--image-invert));
-}
-
 .header__avatar img {
   border: solid var(--gray);
   border-radius: var(--r-cicle);
@@ -84,13 +82,7 @@ header {
   object-fit: cover;
 }
 
-.header__battery {
-  display: flex;
-  align-items: end;
-}
-
-.header__theme-toggle,
-.header__preview-toggle {
+.header__button {
   background: none;
   padding: var(--p-small);
   border-radius: var(--r-cicle);
@@ -99,12 +91,8 @@ header {
 
 /* || MAIN-CONTENT */
 
-.main-content {
-  width: 100vw;
-  height: var(--h-main-content);
-}
-
 .main__project-row {
+  padding: var(--p-large);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,8 +100,10 @@ header {
 }
 
 .compact-card {
-  border: solid var(--white);
-  background-color: green;
+  border: solid var(--gray);
+  background-color: var(--white);
+  min-height: var(--wh-compact-card);
+  min-width: var(--wh-compact-card);
 }
 
 /* || NAVBAR */

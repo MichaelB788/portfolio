@@ -21,7 +21,7 @@
 
 
 
-<body>
+<body class="">
 
   <!-- MAIN -->
   <main>
@@ -43,7 +43,7 @@
       <!-- Right section -->
       <div class="header__right">
 
-        <button class="header__preview-toggle" type="button" aria-label="Expand project preview">
+        <button class="header__button" id="expand-preview" type="button" aria-label="Expand project preview">
           <img src="assets/img/code.svg" alt="Magenta code icon">
         </button>
       
@@ -53,12 +53,8 @@
         </time>
 
         <!-- TODO: Hide the sun or moon icon when light or dark mode is in effect -->
-        <button class="header__theme-toggle" type="button" aria-label="Toggle light mode">
+        <button class="header__button" id="theme-toggle" type="button" aria-label="Toggle light mode">
           <img src="assets/img/sun.svg" alt="Sun icon">
-        </button>
-      
-        <button class="header__theme-toggle" type="button" aria-label="Toggle dark mode">
-          <img src="assets/img/moon.svg" alt="Sun icon">
         </button>
       </div>
 
