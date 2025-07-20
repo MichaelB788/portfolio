@@ -32,38 +32,32 @@
       <!-- Left section -->
       <div class="header__left">
 
-        <div class="header__avatar" role="img">
-          <img src="assets/img/m_icon.png" alt="User icon">
-          <a href=""></a>
+        <div class="header__avatar">
+          <a href="#default">
+            <img src="assets/img/m_icon.png" alt="User icon">
+          </a>
         </div>
 
       </div>
 
       <!-- Right section -->
       <div class="header__right">
+
+        <button class="header__preview-toggle" type="button" aria-label="Expand project preview">
+          <img src="assets/img/code.svg" alt="Magenta code icon">
+        </button>
       
         <!-- TODO: Create a real world timer and replace this placeholder -->
         <time datetime="" class="header__clock" aria-label="Current time">
           <p><span class="number">12:00</span>AM</p>
         </time>
-      
-        <!-- TODO: Track the wifi stability of the user and display it's output in an icon -->
-        <div class="header__wifi" role="img" aria-label="Wifi signal">
-          <img src="assets/img/wifi.svg" alt="Wifi strength">
-        </div>
-      
-        <!-- TODO: Track the battery percentage of the user and display it's output in an icon -->
-        <div class="header__battery">
-          <p class="header__battery" aria-label="Battery percentage"> <span class="number">70</span>% </p>
-        </div>
-        <img src="assets/img/battery.svg" alt="Battery icon">
 
         <!-- TODO: Hide the sun or moon icon when light or dark mode is in effect -->
-        <button class="header__theme-toggle" aria-label="Toggle light mode">
+        <button class="header__theme-toggle" type="button" aria-label="Toggle light mode">
           <img src="assets/img/sun.svg" alt="Sun icon">
         </button>
       
-        <button class="header__theme-toggle" aria-label="Toggle dark mode">
+        <button class="header__theme-toggle" type="button" aria-label="Toggle dark mode">
           <img src="assets/img/moon.svg" alt="Sun icon">
         </button>
       </div>
@@ -76,23 +70,22 @@
     <!-- # MAIN-CONTENT -->
     <div class="main-content">
 
-      <!-- 
-        TODO: Implement N number of projects to this section.
-        Research JSON integration and use JS to make this process easier.
-      -->
-      <ul class="project-list">
 
-        <li class="project-card">
-          <img src="assets/img/" alt="Project preview">
-          <button class="test-project" aria-label="Link to view the project"></button>
-        </li>
+      <div class="main__project-row">
 
-        <li class="project-card">
-          <img src="assets/img/" alt="Project preview">
-          <button class="test-project" aria-label="Link to view the project"></button>
-        </li>
+        <div class="compact-card">
+          <a href="#default">
+            <img src="assets/img/" alt="Project preview">
+          </a>
+        </div>
 
-      </ul>
+        <div class="compact-card">
+          <a href="#default">
+            <img src="assets/img/" alt="Project preview">
+          </a>
+        </div>
+
+      </div>
 
     </div>
 
@@ -100,26 +93,45 @@
 
 
     <!-- #NAVBAR -->
-    <nav class="navbar">
-      <!-- TODO: Implement buttons in the navbar to take the user to differnt parts of the portfolio.  -->
+    <nav>
+
+      <!-- TODO: Implement anchors in the navbar to take the user to differnt parts of the portfolio.  -->
       <ul class="navbar-list">
 
         <li class="navbar-item">
-          <button class="contact-me"></button>
-        </li>
-        <li class="navbar-item">
-          <button class="about-me"></button>
-        </li>
-        <li class="navbar-item">
           <!-- TODO: Implement resume to the site using a JSON file so it can be easy to update -->
-          <button class="resume"></button>
+          <a href="#default" class="resume">
+            <img src="assets/img/briefcase.svg" alt="Orange briefcase icon"> 
+          </a>
         </li>
+
+        <li class="navbar-item">
+          <a href="#default" class="newsletter">
+            <img src="assets/img/inbox.svg" alt="Green inbox icon">
+          </a>
+        </li>
+
         <li class="navbar-item">
           <!-- TODO: Create a blog section which takes Markdown files and displays them. -->
-          <button class="blog"></button>
+          <a href="#default" class="blog">
+            <img src="assets/img/book-open.svg" alt="Red open book icon">
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#default" class="contact-me">
+            <img src="assets/img/send.svg" alt="Blue contact icon">
+          </a>
+        </li>
+          
+        <li class="navbar-item">
+          <a href="#default" class="about-me">
+            <img src="assets/img/user.svg" alt="Light blue user icon">
+          </a>
         </li>
 
       </ul>
+
     </nav>
 
 

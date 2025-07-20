@@ -2,33 +2,58 @@
 
 :root {
   --ff-poppins: 'Poppins', sans-serif;
-}
 
-/* TODO: Let dark mode be the default and toggle using JS */
-.light-mode {
-  background-color: white;
-  color: black;
-}
+  /* gap sizing */
+  --gs-small: 1em;
+  --gs-medium: 2em;
 
-/*
-FIX: SVG's are not normally inverted with the Dark Reader extension.
-This could fix it, but would cause problems when the plugin is disabled. 
-.header__right {
-  filter: invert(1);
+  /* heights and widths */
+  --h-header: 5em;
+  --wh-avatar: 3em;
+  --h-main-content: 10em;
+
+  /* solid colors */
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 22%);
+
+  /* rounded border */
+  --r-capsule: 20px;
+  --r-cicle: 50%;
+
+  /* padding */
+  --p-small: 0.5em;
+  --p-medium: 1em;
+
 }
-*/
 
 html {
   font-family: var(--ff-poppins);
 }
 
+/* TODO: Let dark mode be the default and toggle using JS */
+
+/* dark mode styles */
+.light-mode {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 p > span {
   font-size: x-large;
+}
+
+/* || MAIN */
+
+main {
+  padding: 10px;
 }
 
 /* || HEADER */
@@ -37,30 +62,75 @@ p > span {
 header {
   display: flex;
   justify-content: space-between;
-  max-height: 5em;
+  max-height: var(--h-header);
 }
 
-header img {
-  max-height: 5em;
-  max-width: 5em;
-}
-
-.header__right, .header__left {
+.header__right,
+.header__left {
   display: flex;
-  gap: 1rem;
+  gap: var(--gs-small);
   align-items: center;
 }
 
+.header__right img {
+  filter: invert(var(--image-invert));
+}
 
-.header__avatar {
-  max-height: inherit;
-  align-items: center;
+.header__avatar img {
+  border: solid var(--gray);
+  border-radius: var(--r-cicle);
+  max-height: var(--wh-avatar);
+  max-width: var(--wh-avatar);
+  object-fit: cover;
+}
+
+.header__battery {
+  display: flex;
+  align-items: end;
+}
+
+.header__theme-toggle,
+.header__preview-toggle {
+  background: none;
+  padding: var(--p-small);
+  border-radius: var(--r-cicle);
+  border-color: var(--gray);
 }
 
 /* || MAIN-CONTENT */
 
-.project-list {
-  display: grid;
+.main-content {
+  width: 100vw;
+  height: var(--h-main-content);
+}
+
+.main__project-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gs-small);
+}
+
+.compact-card {
+  border: solid var(--white);
+  background-color: green;
+}
+
+/* || NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list {
+  margin: 0;
+  padding: var(--p-medium);
+  list-style-type: none;
+  display: flex;
+  gap: var(--gs-medium);
+  border-radius: var(--r-capsule);
+  background-color: gainsboro;
 }
 
 /* || MEDIA QUERIES */
