@@ -21,7 +21,7 @@
 
 
 
-<body class="">
+<body>
 
   <!-- MAIN -->
   <main>
@@ -42,14 +42,8 @@
 
       <!-- Right section -->
       <div class="header__right">
-
-        <button class="header__button" id="expand-preview" type="button" aria-label="Expand project preview">
-          <img src="assets/img/code.svg" alt="Magenta code icon">
-        </button>
-      
-        <!-- TODO: Create a real world timer and replace this placeholder -->
         <time datetime="" class="header__clock" aria-label="Current time">
-          <p><span class="number">12:00</span>AM</p>
+          <p><span class="number" id="clock">12:00</span>AM</p>
         </time>
 
         <!-- TODO: Hide the sun or moon icon when light or dark mode is in effect -->
@@ -64,9 +58,14 @@
 
 
     <!-- # MAIN-CONTENT -->
+
+    <!--
+      TODO: 
+      - Add responsiveness for this section 
+      - Have each individual card expand once the user focuses on the card
+      - The first card should have a margin, which would be removed as the user progresses the carousel
+    -->
     <div class="main-content">
-
-
       <div class="main__project-row">
 
         <div class="compact-card">
@@ -81,8 +80,13 @@
           </a>
         </div>
 
-      </div>
+        <div class="compact-card"></div>
 
+        <div class="compact-card"></div>
+
+        <div class="compact-card"></div>
+
+      </div>
     </div>
 
 
@@ -97,7 +101,7 @@
         <li class="navbar-item">
           <!-- TODO: Implement resume to the site using a JSON file so it can be easy to update -->
           <a href="#default" class="resume">
-            <img src="assets/img/briefcase.svg" alt="Orange briefcase icon"> 
+            <img src="assets/img/briefcase.svg" alt="Orange briefcase icon">
           </a>
         </li>
 
@@ -119,7 +123,7 @@
             <img src="assets/img/send.svg" alt="Blue contact icon">
           </a>
         </li>
-          
+
         <li class="navbar-item">
           <a href="#default" class="about-me">
             <img src="assets/img/user.svg" alt="Light blue user icon">
