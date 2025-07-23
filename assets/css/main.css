@@ -14,8 +14,9 @@
 
   /* solid colors */
   --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
-  --gray: hsl(0, 0%, 22%);
+  --white: hsl(0, 0%, 79%);
+  --gray: hsl(0, 0%, 30%);
+  --dark-gray: hsl(0, 0%, 15%);
 
   /* rounded border */
   --r-capsule: 20px;
@@ -101,7 +102,7 @@ header {
 
 .compact-card {
   border: solid var(--gray);
-  background-color: var(--white);
+  background-color: var(--dark-gray);
   min-height: var(--wh-compact-card);
   min-width: var(--wh-compact-card);
 }
@@ -120,7 +121,7 @@ nav {
   display: flex;
   gap: var(--gs-medium);
   border-radius: var(--r-capsule);
-  background-color: gainsboro;
+  background-color: var(--dark-gray);
 }
 
 /* || MEDIA QUERIES */
